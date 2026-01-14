@@ -70,6 +70,18 @@ web_modules/
 .env.*
 !.env.example
 
+# Expo
+.expo/
+.expo-shared/
+.expo-shared/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache

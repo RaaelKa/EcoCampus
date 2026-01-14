@@ -1,0 +1,20 @@
+const { Pool } = require('pg');
+require('dotenv').config();
+
+const pool = new Pool({
+  host: process.env.DB_HOST || 'localhost',
+  port: process.env.DB_PORT || 5432,
+  database: process.env.DB_NAME || 'ecocampus',
+  user: process.env.DB_USER || 'postgres',
+  password: process.env.DB_PASSWORD,
+});
+
+pool.on('connect', () => {
+  console.log('PostgreSQL veritabanına başarıyla bağlandı');
+});
+
+pool.on('error', (err) => {
+  console.error('PostgreSQL bağlantı hatası:', err);
+});
+
+module.exports = pool;
