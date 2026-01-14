@@ -220,5 +220,5 @@ Bu proje YMH3007 dersi için geliştirilmiştir.
 
 ## Yazar
 
-[Öğrenci Adı Soyadı]
-[Öğrenci Numarası]
+Ahmet Buğra Derman
+232010080021
